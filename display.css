@@ -30,8 +30,8 @@
   display: flex;
   justify-content: space-between;
   gap: 2vw;
-  padding: 2vh 2vw;
-  margin: 2vh 2vw;
+  padding: 1vh 1vw;
+  margin: 1vh 1vw;
   background-color: #ECEDEE;
   background: linear-gradient(to left bottom, transparent 50%, rgba(0, 0, 0, 0.4) 0) no-repeat 100% 0/2vh 2vh, linear-gradient(-135deg, transparent 1.5vh, #ECEDEE 0);
   box-shadow: -10vh 0 10vh -10vh #AEA097, 0 10vh 10vh -10vh #AEA097, -10vh 0 10vh -10vh #AEA097;

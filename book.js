@@ -62,6 +62,7 @@ const CreatePubishModal = (book, index) => {
                 <div class="display__modal--content">
                 <span id="class${index}" class="close">&times;</span>
                 <p>Total Page: ${book.pages}</p>
+                <p>Language: ${book.language}</p>
                 <p>Published Country: ${book.country}</p>
                 <p>Publisher: ${book.publisher}</p>
                 <p>Published Time: ${book.publishedtime}</p>
@@ -81,7 +82,6 @@ export const createBookCard = (book, parent, index) => {
         <div class="display__bookcard--info">
             <p>Author: ${book.author}</p>` + CreateRatingBar(book) + `
             <p>Catergory: ${book.category}</p> 
-            <p>Language: ${book.language}</p>
             <p>Description:</p>
             <p class="display__bookcard--description">${book.description}</p>
         </div>
