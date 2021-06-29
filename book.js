@@ -56,14 +56,15 @@ const CreatePubishModal = (book, index) => {
 
     const id = book.id.map((entry) => `${entry.type}-${entry.identifier}`).join(" ");
 
-    return `<div><button class="display__modal--btn" id="publishbtn${index}">Publication Info</button>
-    <div id="publishmodal${index}" class="display__modal">
-        <div class="display__modal--content">
-            <span onClick={} class="close">&times;</span>
-            <p>Total Page: ${book.pages}</p>
-            <p>Published Country: ${book.country}</p>
-            <p>Publisher: ${book.publisher}</p>
-            <p>Published Time: ${book.publishedtime}</p>
+    return `<div>
+            <button class="display__modal--btn" id="publishbtn${index}">Publication Info</button>
+            <div id="publishmodal${index}" class="display__modal">
+                <div class="display__modal--content">
+                <span id="class${index}" class="close">&times;</span>
+                <p>Total Page: ${book.pages}</p>
+                <p>Published Country: ${book.country}</p>
+                <p>Publisher: ${book.publisher}</p>
+                <p>Published Time: ${book.publishedtime}</p>
             <p>Publication ID: ${id}</p>
         </div>
     </div></div>`;

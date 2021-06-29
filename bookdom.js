@@ -33,15 +33,19 @@ search.addEventListener("click", async (event) => {
         )
     }
     console.log("search finished");
-});
+    const btnArr = document.getElementsByClassName("display__modal--btn");
+    const modalbtnArr = [...btnArr];
+    const closeArr = document.getElementsByClassName("close");
+    const clsArr = [...closeArr];
 
-const btnArr = document.getElementsByClassName(".display__modal--btn");
-const modalbtnArr = [...btnArr];
-
-
-modalbtnArr.map((button, index) => button.addEventListener("click", (event)=>{
-    document.getElementById(`publishmodal${index}`).style.display = "block";
+    modalbtnArr.map((button, index) => button.addEventListener("click", (event)=>{
+        document.getElementById(`publishmodal${index}`).style.display = "block";
     }));
+
+    clsArr.map((x, index) => x.addEventListener("click", (event)=>{
+        document.getElementById(`publishmodal${index}`).style.display = "none";
+    }));
+});
 
 
 
