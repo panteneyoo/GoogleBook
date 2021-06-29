@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
+* {
+  font-family: "Syne Mono", monospace;
+}
+
+.header {
+  background-color: #ECEDEE;
+}
+
+/*# sourceMappingURL=style.css.map */

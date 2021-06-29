@@ -1,0 +1,48 @@
+@use "style" as style;
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 15% 10% 5% 10%;
+    background-image: linear-gradient(style.$Cognac,style.$White);
+
+    h1 {
+        color: style.$Maroon;
+        font-size: 5vw;
+    }
+    p {
+        color: style.$Slate;
+    }
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    background-color: style.$White;
+    padding-bottom: 5vh;
+    &__input {
+        width: 50vw;
+        height: 5vh;
+        font-size: 2vw;
+        &:focus {
+            outline-color: style.$Khaki;
+        }
+    }
+
+    &__btn {
+        width: 10vw;
+        height: 5.6vh;
+        background-color: style.$Cognac;
+        border: transparent;
+        font-size: 2vw;
+        color: style.$White;
+        &:active {
+            background-color: style.$Maroon;
+            color: style.$Slate;
+        }
+    }
+}
+
+#count {
+    font-size: 3vh;
+}

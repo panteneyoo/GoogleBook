@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+$Cognac: #907970;
+$Khaki: #CAC1B0;
+$Maroon: #854B50;
+$Slate: #8693A0;
+$White: #ECEDEE;
+$Taupe: #AEA097;
+
+
+* {
+    font-family: 'Syne Mono', monospace;
+}
+
+.header{
+    background-color: $White;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Book Browser</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="searchbar.css">
+    <link rel="stylesheet" href="display.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<header class="header">
+    <div class="header__intro">
+        <h1>Google Book Search Engine</h1>
+        <p>This is a web app to search books from Google Book api showing top 40 matching results of your query</p>
+    </div>
+</header>
+<body>
+    <div class="search">
+        <input class="search__input" id="searchinput" placeholder="Please input the name of the book..."/>
+        <button class="search__btn" id="searchbtn">search</button>
+    </div>
+    <div class = "search" id="count"></div>
+    <div class="display" id="display">
+    </div>
+</body>
+    <script type="module" src="./bookapi.js"></script>
+    <script type="module" src="./book.js"></script>
+    <script type="module" src="./bookdom.js" defer></script>
+</html>
