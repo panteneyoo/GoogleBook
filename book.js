@@ -77,8 +77,8 @@ export const createBookCard = (book, parent, index) => {
             <p>${book.subtitle}</p>
             <a href=${book.preview}><img src=${book.image} alt="Book Cover image missing"/></a>`+ CreatePubishModal(book, index) +`
         </div>
-        <div class="display__bookcard--info">` + CreateRatingBar(book) +
-        `   <p>Author: ${book.author}</p>
+        <div class="display__bookcard--info">
+            <p>Author: ${book.author}</p>` + CreateRatingBar(book) + `
             <p>Catergory: ${book.category}</p> 
             <p>Language: ${book.language}</p>
             <p>Description:</p>
