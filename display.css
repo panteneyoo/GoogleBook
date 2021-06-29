@@ -61,7 +61,7 @@
   font-size: 1.2vh;
   overflow: scroll;
   color: #8693A0;
-  background-color: #ECEDEE;
+  background-color: transparent;
 }
 .display__bookcard--description::-webkit-scrollbar {
   display: none;
